@@ -54,7 +54,7 @@ function draw() {
   
   if(keyDown("space")){
     Matter.Body.setPosition(stoneObj.body, {x:235,y:420});
-    //launcherObject.attach(stoneObj.body);
+    launcherObject.attach(stoneObj.body);
   }
 
   treeObj.display();
