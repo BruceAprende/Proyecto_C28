@@ -40,7 +40,7 @@ function setup() {
 	treeObj=new tree(1050,580);
 	groundObject=new ground(width/2,600,width,20);
   //crea aquí el launcherObject 
-
+launcherObject = new Launcher(stoneObj.body,{x:235,y:420});
 
 	Engine.run(engine);
 }
@@ -74,7 +74,7 @@ function draw() {
   stoneObj.display();
   groundObject.display();
   // muestra el objeto lanzador aquí
-    launcherObject = new Launcher(stoneObj.body,{x:235,y:420});
+    launcherObject.display();
 
   detectollision(stoneObj,mango1);
   detectollision(stoneObj,mango2);
@@ -88,8 +88,6 @@ function draw() {
   detectollision(stoneObj,mango10);
   detectollision(stoneObj,mango11);
   detectollision(stoneObj,mango12);
-
-  launcherObject.display();
 }
 
 //crea aquí la función mouseDragged
