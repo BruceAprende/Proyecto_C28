@@ -14,7 +14,11 @@ class Launcher{
     fly(){
         this.launcher.bodyA = null;
     }
-
+    
+    attach(){
+        bodyA: bodyA;
+    }
+    
     display(){
         if(this.launcher.bodyA){
             var pointA = this.launcher.bodyA.position;
