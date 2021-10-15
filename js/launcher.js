@@ -1,5 +1,5 @@
 class Launcher{
-    constructor(bodyA, anchor){
+    constructor(body, anchor){
         var options = {
             bodyA: body,
             pointB: anchor,
