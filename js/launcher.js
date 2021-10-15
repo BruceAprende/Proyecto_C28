@@ -16,7 +16,7 @@ class Launcher{
     }
     
     attach(){
-        bodyA;
+        bodyA=bodyA;
     }
     
     display(){
