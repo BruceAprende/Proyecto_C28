@@ -6,6 +6,7 @@ class Launcher{
             stiffness: 0.04,
             length: 10
         }
+        this.bodyA=body;
         this.pointB = pointB
         this.launcher = Constraint.create(options);
         World.add(world, this.launcher);
@@ -17,7 +18,7 @@ class Launcher{
     }
     
     attach(){
-        this.bodyA = bodyA;
+        this.launcher.bodyA = body;
     }
     
     display(){
