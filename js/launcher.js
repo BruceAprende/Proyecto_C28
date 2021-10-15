@@ -9,13 +9,15 @@ class Launcher{
         this.pointB = pointB
         this.launcher = Constraint.create(options);
         World.add(world, this.launcher);
-        /*attach(){
-        this.bodyA = bodyA;
-    }*/
+        
     }
 
     fly(){
         this.launcher.bodyA = null;
+    }
+    
+    attach(){
+        this.bodyA = bodyA;
     }
     
     display(){
