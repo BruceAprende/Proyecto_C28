@@ -9,9 +9,9 @@ class Launcher{
         this.pointB = pointB
         this.launcher = Constraint.create(options);
         World.add(world, this.launcher);
-        attach(){
+        /*attach(){
         this.bodyA = bodyA;
-    }
+    }*/
     }
 
     fly(){
